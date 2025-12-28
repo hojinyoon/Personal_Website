@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Experience — Hojin Yoon" sideBarActiveItemID="Experience">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Work Experience</div>
+  </div>
+  <HorizontalCard
+    title="R Programming Tutor"
+    employer="ThinkNeuro"
+    img="/post_img.webp"
+    desc='Served as an R tutor as part of an early-stage startup, supporting students with R-based coursework through structured instruction comparable to a teaching role. Responsibilities included hosting weekly office hours to explain concepts and debug code, guiding students through assignments, and designing quizzes and exams to assess understanding and reinforce core data analysis skills.'
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Software Engineer"
+    employer="People Link One (PLO)"
+    img="/post_img.webp"
+    desc='Develop student-focused web and mobile applications to improve campus life. Collaborate with cross-functional teams to design, test, and deploy production-ready features. Utilize modern development frameworks and version control to build scalable, maintainable solutions.'
+    url="#"
+    badge="ACTIVE"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Technical Operations Associate"
+    employer="EG America"
+    img="/post_img.webp"
+    desc='Supported daily operations through digital infrastructure, including POS software and inventory management systems. Monitored system performance, troubleshot technical issues, and ensured data integrity. Contributed to improving operational efficiency with tech-driven solutions.'
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Technology Intern"
+    employer="Ballston Spa Central School District (BSCSD)"
+    img="/post_img.webp"
+    desc='Maintained and optimized internal databases, improving data accuracy and retrieval efficiency. Assisted in automating inventory tracking workflows and streamlining IT documentation. Provided technical support to faculty and staff for software and network systems.'
+    url="#"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Leadership Experience</div>
+  </div>
+
+  <HorizontalCard
+    title="Teacher & Social Chair"
+    employer="Korean Learning Club (KLC)"
+    img="/post_img.webp"
+    desc='Lead weekly Korean language lessons for students of varying levels. Plan and coordinate cultural events to foster engagement, community building, and cross-cultural understanding. Manage communications and outreach to grow club participation.'
+    url="#"
+    badge="ACTIVE"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Math Learning Assistant"
+    employer="Penn State University"
+    img="/post_img.webp"
+    desc='Provide peer instruction and academic support for university-level math courses. Guide students through complex problem-solving strategies, reinforce conceptual understanding, and enhance learning outcomes through collaborative teaching.'
+    url="#"
+    badge="ACTIVE"
+  />
+</BaseLayout>

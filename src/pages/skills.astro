@@ -1,0 +1,233 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Skills — Hojin Yoon";
+const description = "Languages, frameworks, and tools I use.";
+---
+
+<BaseLayout title={title} description={description} sideBarActiveItemID="skills">
+  <h1 class="text-4xl font-bold mb-6">Skills</h1>
+
+  <div role="tablist" class="tabs tabs-lifted">
+    <!-- LANGUAGES -->
+    <input type="radio" name="skills-tabs" role="tab" class="tab" aria-label="Languages" checked />
+    <div role="tabpanel" class="tab-content bg-base-100 rounded-box p-6">
+      <!-- 3 columns on large screens, 2 on small/medium; always 6 slots -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+        <!-- Real Cards -->
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Python</h3>
+              <span class="badge">Intermediate</span>
+            </div>
+            <progress class="progress w-full" value="85" max="100"></progress>
+            <p class="opacity-70 text-sm">Data analysis, scripting, quick prototyping</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Java</h3>
+              <span class="badge">Intermediate</span>
+            </div>
+            <progress class="progress w-full" value="70" max="100"></progress>
+            <p class="opacity-70 text-sm">OOP, algorithms, coursework</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">TypeScript</h3>
+              <span class="badge">Intermediate</span>
+            </div>
+            <progress class="progress w-full" value="75" max="100"></progress>
+            <p class="opacity-70 text-sm">Typed front-end and backend development</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">JavaScript</h3>
+              <span class="badge">Intermediate</span>
+            </div>
+            <progress class="progress w-full" value="75" max="100"></progress>
+            <p class="opacity-70 text-sm">Web apps, fetch/APIs, interactivity</p>
+          </div>
+        </div>
+
+        <!-- Placeholders to reach 6 -->
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+      </div>
+    </div>
+
+    <!-- FRAMEWORKS -->
+    <input type="radio" name="skills-tabs" role="tab" class="tab" aria-label="Frameworks" />
+    <div role="tabpanel" class="tab-content bg-base-100 rounded-box p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">React.js</h3>
+              <span class="badge badge-primary">Active</span>
+            </div>
+            <progress class="progress w-full" value="80" max="100"></progress>
+            <p class="opacity-70 text-sm">Component-based UI, responsive layouts</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Node.js</h3>
+              <span class="badge badge-primary">Active</span>
+            </div>
+            <progress class="progress w-full" value="75" max="100"></progress>
+            <p class="opacity-70 text-sm">Backend services, REST APIs</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">APIs</h3>
+              <span class="badge badge-primary">Active</span>
+            </div>
+            <progress class="progress w-full" value="75" max="100"></progress>
+            <p class="opacity-70 text-sm">Integrations, authentication, data handling</p>
+          </div>
+        </div>
+
+        <!-- Placeholders -->
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <input type="radio" name="skills-tabs" role="tab" class="tab" aria-label="Tools" />
+    <div role="tabpanel" class="tab-content bg-base-100 rounded-box p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">MongoDB</h3>
+              <span class="badge">Intermediate</span>
+            </div>
+            <progress class="progress w-full" value="65" max="100"></progress>
+            <p class="opacity-70 text-sm">Schemas, queries, prototyping</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Git & GitHub</h3>
+              <span class="badge badge-primary">Daily</span>
+            </div>
+            <progress class="progress w-full" value="85" max="100"></progress>
+            <p class="opacity-70 text-sm">Branches, PRs, issues, releases</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Emulators</h3>
+              <span class="badge">Intermediate</span>
+            </div>
+            <progress class="progress w-full" value="70" max="100"></progress>
+            <p class="opacity-70 text-sm">Testing, debugging, and cross-platform simulation</p>
+          </div>
+        </div>
+
+
+        <!-- Placeholders (to reach 6) -->
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+        <div class="card w-full h-40 bg-transparent shadow-none border-0 invisible overflow-hidden"></div>
+      </div>
+    </div>
+
+    <!-- OTHER -->
+    <input type="radio" name="skills-tabs" role="tab" class="tab" aria-label="Other" />
+    <div role="tabpanel" class="tab-content bg-base-100 rounded-box p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Collaboration</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">Team projects, communication, adaptability</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Leadership</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">Leading initiatives, delegating tasks, mentoring</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Data Analysis</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">EDA mindset, statistical insights</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Visualization</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">Storytelling with data through charts & visuals</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Communication</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">Clear verbal and written communication</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Adaptability</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">Thrives in fast-changing environments</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 hover:bg-base-300 transition w-full h-40 overflow-hidden">
+          <div class="card-body h-full flex flex-col">
+            <div class="flex items-center justify-between">
+              <h3 class="card-title">Teamwork</h3>
+              <span class="badge">Strong</span>
+            </div>
+            <p class="opacity-70 text-sm">Collaborative problem solving</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

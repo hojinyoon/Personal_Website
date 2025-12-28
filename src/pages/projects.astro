@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects — Hojin Yoon" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Precision"
+    img="/post_img.webp"
+    desc="Precision is an AI-based visual diagnostic system that evaluates the health of mechanical components using images and videos alone. By integrating mechanical engineering expertise with deep learning, it detects defects, estimates severity, and produces a clear health score with actionable maintenance recommendations, without requiring sensors or specialized hardware."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="AiD"
+    img="/post_img.webp"
+    desc="AiD is a web application that analyzes uploaded content to provide a clear authenticity confidence score through intuitive visual results. Users can sign in to track submission history, view approval versus rejection analytics, request re-reviews, and generate shareable PDF certificates with print support, all within a streamlined, end-to-end analysis flow."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="TAGO"
+    img="/post_img.webp"
+    desc="TAGO is a campus mobility platform that simplifies shared airport and long-distance travel for university students. By replacing manual ride coordination with a structured in-app experience, TAGO reduces cost, confusion, and no-show risk while making shared taxi rides more reliable and predictable, starting with campus-to-airport routes and scaling across campuses."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FluentFi"
+    img="/post_img.webp"
+    desc="Built a fintech platform that analyzes spending patterns and delivers real-time banking recommendations for U.S. travelers abroad. Designed the business model and developed the front-end MVP in Java and Python using open banking APIs. Currently preparing for public beta."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="SymptomSense"
+    img="/post_img.webp"
+    desc="Developed a fully functional health-tracking prototype within 24 hours using MongoDB, TypeScript, and APIs. Focused on real-time user health monitoring and clean, responsive UI."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Scheduler"
+    img="/post_img.webp"
+    desc="Scheduler is a Java Swing application backed by an Apache Derby database for managing semesters, courses, classes, and students. It supports class enrollment with waitlists and includes administrative functions such as viewing rosters, dropping students or classes, and promoting waitlisted students."
+    url="#"
+  />
+
+</BaseLayout>
